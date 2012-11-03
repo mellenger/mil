@@ -58,6 +58,10 @@
 
 ;----------// Scripts
 
+  ; reveal modal javascript
+  scripts[] = scripts/jquery.reveal.js
+
+
   ; Internet Explorer Scripts
   ;
   ; AT can load scripts in conditional comments from the info file. If you are
@@ -75,20 +79,20 @@
 
 ;----------// Regions
 
-  regions[sidebar_first]     = Sidebar first
-  regions[sidebar_second]    = Sidebar second
+;  regions[sidebar_first]     = Sidebar first
+;  regions[sidebar_second]    = Sidebar second
   regions[content]           = Main Content
-  regions[highlighted]       = Highlighted
-  regions[content_aside]     = Aside
-  regions[secondary_content] = Secondary
-  regions[tertiary_content]  = Tertiary
+;  regions[highlighted]       = Highlighted
+;  regions[content_aside]     = Aside
+;  regions[secondary_content] = Secondary
+;  regions[tertiary_content]  = Tertiary
   regions[footer]            = Footer
-  regions[leaderboard]       = Leaderboard
+;  regions[leaderboard]       = Leaderboard
   regions[header]            = Header
   regions[menu_bar]          = Menu Bar
   regions[help]              = Help
-  regions[page_top]          = Page top
-  regions[page_bottom]       = Page bottom
+;  regions[page_top]          = Page top
+;  regions[page_bottom]       = Page bottom
 
 
 ;----------// Gpanel Regions
@@ -427,6 +431,10 @@
 
   ; Custom CSS
   settings[custom_css] = ''
+
+
+
+
 
 ; Information added by drupal.org packaging script on 2012-08-29
 version = "7.x-3.1"
