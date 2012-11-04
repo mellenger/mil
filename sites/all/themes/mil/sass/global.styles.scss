@@ -42,16 +42,6 @@ html {
   background: $page;
 }
 
-/* 
- * Import the webfonts we will be using
- */
-
-@import "../webfonts/franklingothicfs_book_macroman/stylesheet.css";
-@import "../webfonts/franklingothicfs_compressed_macroman/stylesheet.css";
-@import "../webfonts/franklingothicfs_heavy_macroman/stylesheet.css";
-
-
-
 body {
   font-family: FranklinGothicFSBookRegular, $sans-serif-small; // Set from _custom.scss font variables
   font-size: 87.5%;
@@ -1974,5 +1964,3 @@ tr.error {
 .node-article .region-two-33-66-second > div {
   margin: 0 2em 0 0;
 }
-
-@import "../scripts/reveal.css";

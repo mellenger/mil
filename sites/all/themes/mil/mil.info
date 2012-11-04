@@ -12,6 +12,15 @@
 
 ;----------// Stylesheets
 
+  ; the embedded fonts
+  stylesheets[screen][] = webfonts/franklingothicfs_book_macroman/fgbook.css
+  stylesheets[screen][] = webfonts/franklingothicfs_compressed_macroman/fgcompressed.css
+  stylesheets[screen][] = webfonts/franklingothicfs_heavy_macroman/fgheavy.css
+
+  ; style for the reveal modal
+  stylesheets[screen][] = scripts/reveal.css
+
+
   ; See each stylesheet for extensive documentation and help.
   stylesheets[screen][] = css/global.base.css
   stylesheets[screen][] = css/global.styles.css
@@ -117,10 +126,10 @@
   ; Remove the semicolon to umcomment and clear the sites cache.
 
   ; Page layout plugins
-  ; plugins[page_layout][layouts] = layouts/page
+  plugins[page_layout][layouts] = layouts/page
 
   ; Panels layout plugins
-  ; plugins[panels][layouts] = layouts/panels
+  plugins[panels][layouts] = layouts/panels
 
 
 ;----------// Site Features
