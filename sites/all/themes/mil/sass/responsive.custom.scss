@@ -50,6 +50,31 @@
     float: none;
     width: 100%;
   }
+
+  .node-article .two-33-66 {
+    display:table;
+  }
+
+  .node-article h3 {
+    margin: 0 2em 0 10px;
+  }
+
+  .node-article .region-two-33-66-first {
+    text-align:left;
+    display: table-footer-group;
+  }
+
+  .node-article .region-two-33-66-first > div,
+  .node-article .region-two-33-66-second > div {
+    margin: 0 2em 0 10px;
+  }
+
+  .node-article .region-two-33-66-first .field {
+    display: inline-block;
+    float: left;
+    margin-right:1em;
+  }
+
 }
 
 

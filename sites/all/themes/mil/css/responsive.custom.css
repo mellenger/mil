@@ -40,6 +40,35 @@
     float: none;
     width: 100%;
   }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/andrew\/Sites\/mil\/sites\/all\/themes\/mil\/sass\/responsive\.custom\.scss}line{font-family:\0000354}}
+  .node-article .two-33-66 {
+    display: table;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/andrew\/Sites\/mil\/sites\/all\/themes\/mil\/sass\/responsive\.custom\.scss}line{font-family:\0000358}}
+  .node-article h3 {
+    margin: 0 2em 0 10px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/andrew\/Sites\/mil\/sites\/all\/themes\/mil\/sass\/responsive\.custom\.scss}line{font-family:\0000362}}
+  .node-article .region-two-33-66-first {
+    text-align: left;
+    display: table-footer-group;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/andrew\/Sites\/mil\/sites\/all\/themes\/mil\/sass\/responsive\.custom\.scss}line{font-family:\0000368}}
+  .node-article .region-two-33-66-first > div,
+  .node-article .region-two-33-66-second > div {
+    margin: 0 2em 0 10px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/andrew\/Sites\/mil\/sites\/all\/themes\/mil\/sass\/responsive\.custom\.scss}line{font-family:\0000372}}
+  .node-article .region-two-33-66-first .field {
+    display: inline-block;
+    float: left;
+    margin-right: 1em;
+  }
 }
 /*
  * Tablet sizes and up

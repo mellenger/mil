@@ -75,7 +75,9 @@ h2 {
 }
 
 
-h3 {}
+h3 {
+  font-size:2em;
+}
 
 
 h4 {}
@@ -336,7 +338,7 @@ var {
  * Wrapper for the site name and slogan (hgroup)
  */
 #name-and-slogan {
-  width:100px;
+  width:99px;
 }
 
 
@@ -1954,6 +1956,23 @@ tr.error {
     min-height: 260px;
     width: auto;
   }
+}
+
+.pane-news h2 {
+  border-bottom: 1px solid $ultralight;
+}
+
+.node-article h3 {
+  margin-left: 33.3333%;
+}
+
+.node-article .region-two-33-66-first {
+  text-align:right;
+}
+
+.node-article .region-two-33-66-first > div,
+.node-article .region-two-33-66-second > div {
+  margin: 0 2em 0 0;
 }
 
 @import "../scripts/reveal.css";
