@@ -22,6 +22,7 @@ environment = :production
 css_dir = "css"
 sass_dir = "sass"
 images_dir = "css/images"
+fonts_dir = "webfonts"
 
 
 # Assuming this theme is in sites/*/themes/THEMENAME, you can add the partials

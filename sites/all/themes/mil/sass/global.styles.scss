@@ -2,6 +2,31 @@
 // _base.scss imports _custom.scss (variables and mixins) and other partials.
 @import "base";
 @import "compass/css3";
+
+@include font-face("fgBookRegular", 
+  font-files(
+    "franklingothicfs_book_macroman/FranklinGothic-Book-webfont.woff", woff, 
+    "franklingothicfs_book_macroman/FranklinGothic-Book-webfont.eot", opentype,
+    "franklingothicfs_book_macroman/FranklinGothic-Book-webfont.ttf", truetype,
+    "franklingothicfs_book_macroman/FranklinGothic-Book-webfont.svg", 'svg'
+    ), "franklingothicfs_book_macroman/FranklinGothic-Book-webfont.eot", normal, normal);
+
+@include font-face("fgCompressed", 
+  font-files(
+    "franklingothicfs_compressed_macroman/FranklinGothic-Comp-webfont.woff", woff, 
+    "franklingothicfs_compressed_macroman/FranklinGothic-Comp-webfont.eot", opentype,
+    "franklingothicfs_compressed_macroman/FranklinGothic-Comp-webfont.ttf", truetype,
+    "franklingothicfs_compressed_macroman/FranklinGothic-Comp-webfont.svg", 'svg'
+ ), "franklingothicfs_compressed_macroman/FranklinGothic-Comp-webfont.eot", normal, normal);
+
+@include font-face("fgHeavy", 
+  font-files(
+    "franklingothicfs_heavy_macroman/FranklinGothic-Hvy-webfont.woff", woff, 
+    "franklingothicfs_heavy_macroman/FranklinGothic-Hvy-webfont.eot", opentype,
+    "franklingothicfs_heavy_macroman/FranklinGothic-Hvy-webfont.ttf", truetype,
+    "franklingothicfs_heavy_macroman/FranklinGothic-Hvy-webfont.svg", 'svg'
+ ), "franklingothicfs_heavy_macroman/FranklinGothic-Hvy-webfont.eot", normal, normal);
+
 /*
  * @file
  * global.styles
@@ -43,7 +68,7 @@ html {
 }
 
 body {
-  font-family: FranklinGothicFSBookRegular, $sans-serif-small; // Set from _custom.scss font variables
+  font-family: $sans-serif-small; // Set from _custom.scss font variables
   font-size: 87.5%;
   text-rendering: optimizeLegibility;
 }
@@ -53,13 +78,13 @@ body {
  *   HTML Elements
  * ========================================================================== */
 
-h1 {
-  font: normal normal normal 1em/1.1em FranklinGothicFSMedBold, $sans-serif-small;
+h1#site-name {
+  font: normal normal normal 1em/1.1em fgHeavy, $sans-serif-small;
 }
 
 
 h2 {
-  font:normal 260%/1.2em FranklinGothicFSCompressedRg, $sans-serif-small;
+  font:normal 260%/1.2em $impact;
   text-transform:uppercase;
 
 }

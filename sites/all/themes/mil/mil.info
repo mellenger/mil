@@ -12,11 +12,6 @@
 
 ;----------// Stylesheets
 
-  ; the embedded fonts
-  stylesheets[screen][] = webfonts/franklingothicfs_book_macroman/fgbook.css
-  stylesheets[screen][] = webfonts/franklingothicfs_compressed_macroman/fgcompressed.css
-  stylesheets[screen][] = webfonts/franklingothicfs_heavy_macroman/fgheavy.css
-
   ; style for the reveal modal
   stylesheets[screen][] = scripts/reveal.css
 

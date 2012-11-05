@@ -1,80 +1,17 @@
-/*
- * responsive.custom.css is for custom media queries that are not set via the
- * theme settings, such as cascading media queries.
- *
- * By default all the other responsive stylesheets used in Adaptivetheme use a
- * "stacking method", however cascading media queries use a waterfall method so
- * you can leverage the cascade and inheritance for all browsers that support
- * media queries, regardless of screen size.
- *
- * @SEE http://zomigi.com/blog/essential-considerations-for-crafting-quality-media-queries/#mq-overlap-stack
- *
- * NOTE: this file loads by default, to disable got to your theme settings and
- * look under the "CSS" settings tab.
- */
-/*
- * Really small screens and up
- */
+/* responsive.custom.css is for custom media queries that are not set via the theme settings, such as cascading media queries.  By default all the other responsive stylesheets used in Adaptivetheme use a "stacking method", however cascading media queries use a waterfall method so you can leverage the cascade and inheritance for all browsers that support media queries, regardless of screen size.  @SEE http://zomigi.com/blog/essential-considerations-for-crafting-quality-media-queries/#mq-overlap-stack  NOTE: this file loads by default, to disable got to your theme settings and look under the "CSS" settings tab. */
+/* Really small screens and up */
 /* @media only screen and (min-width: 220px) {} */
-/*
- * Smartphone sizes and up
- */
+/* Smartphone sizes and up */
 /* @media only screen and (min-width: 320px) {} */
-/*
- * Smartphone sizes and down
- */
-@media only screen and (max-width: 480px) {
-  /* 
-   * Float Region blocks example:
-   * In smaller screen sizes we can remove the float and widths so all blocks
-   * stack instead of displaying horizonally. The selector used here is an
-   * "attribute selector" which will match on any float block class. Use your
-   * inspector or Firebug to get the classes from the page output if you need
-   * more granular control over block alignment and stacking.
-   * 
-   * "Float Region blocks" is an extension for floating blocks in regions, see
-   * your themes appearance settings, under the Extensions tab.
-   */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/andrew\/Sites\/mil\/sites\/all\/themes\/mil\/sass\/responsive\.custom\.scss}line{font-family:\0000349}}
-  .region[class*="float-blocks"] .block {
-    float: none;
-    width: 100%;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/andrew\/Sites\/mil\/sites\/all\/themes\/mil\/sass\/responsive\.custom\.scss}line{font-family:\0000354}}
-  .node-article .two-33-66 {
-    display: table;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/andrew\/Sites\/mil\/sites\/all\/themes\/mil\/sass\/responsive\.custom\.scss}line{font-family:\0000358}}
-  .node-article h3 {
-    margin: 0 2em 0 10px;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/andrew\/Sites\/mil\/sites\/all\/themes\/mil\/sass\/responsive\.custom\.scss}line{font-family:\0000362}}
-  .node-article .region-two-33-66-first {
-    text-align: left;
-    display: table-footer-group;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/andrew\/Sites\/mil\/sites\/all\/themes\/mil\/sass\/responsive\.custom\.scss}line{font-family:\0000368}}
-  .node-article .region-two-33-66-first > div,
-  .node-article .region-two-33-66-second > div {
-    margin: 0 2em 0 10px;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/andrew\/Sites\/mil\/sites\/all\/themes\/mil\/sass\/responsive\.custom\.scss}line{font-family:\0000372}}
-  .node-article .region-two-33-66-first .field {
-    display: inline-block;
-    float: left;
-    margin-right: 1em;
-  }
-}
-/*
- * Tablet sizes and up
- */
+/* Smartphone sizes and down */
+@media only screen and (max-width: 480px) { /*  Float Region blocks example: In smaller screen sizes we can remove the float and widths so all blocks stack instead of displaying horizonally. The selector used here is an "attribute selector" which will match on any float block class. Use your inspector or Firebug to get the classes from the page output if you need more granular control over block alignment and stacking.  "Float Region blocks" is an extension for floating blocks in regions, see your themes appearance settings, under the Extensions tab. */
+  .region[class*="float-blocks"] .block { float: none; width: 100%; }
+  .node-article .two-33-66 { display: table; }
+  .node-article h3 { margin: 0 2em 0 10px; }
+  .node-article .region-two-33-66-first { text-align: left; display: table-footer-group; }
+  .node-article .region-two-33-66-first > div, .node-article .region-two-33-66-second > div { margin: 0 2em 0 10px; }
+  .node-article .region-two-33-66-first .field { display: inline-block; float: left; margin-right: 1em; } }
+/* Tablet sizes and up */
 /* @media only screen and (min-width: 768px) {} */
-/*
- * Desktops/laptops and up
- */
+/* Desktops/laptops and up */
 /* @media only screen and (min-width: 1025px) {} */
