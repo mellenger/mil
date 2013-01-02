@@ -92,6 +92,7 @@ h2 {
 
 h3 {
   font-size:2em;
+  line-height:1.2em;
 }
 
 
@@ -104,7 +105,9 @@ h5 {}
 h6 {}
 
 
-p {}
+p {
+  margin:0 3em 1em 0;
+}
 
 
 b,
@@ -1475,7 +1478,7 @@ ul.action-links {
  * ========================================================================== */
 
 .node {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   &.node-promoted {}
 
