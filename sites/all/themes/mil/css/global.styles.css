@@ -16,11 +16,7 @@ h1#site-name { font: normal normal normal 1em/1.1em fgHeavy, fgBookRegular, "Tre
 
 h2 { font: normal 260%/1.2em fgCompressed, Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; text-transform: uppercase; }
 
-<<<<<<< HEAD
 h3 { font-size: 2em; margin: 1em 0 10px; }
-=======
-h3 { font-size: 2em; }
->>>>>>> 1bba887e9c2bb59fcd9759f048182835a8569b25
 
 p { margin: 0 3em 1em 0; }
 
