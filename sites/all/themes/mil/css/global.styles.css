@@ -16,7 +16,7 @@ h1#site-name { font: normal normal normal 1em/1.1em fgHeavy, fgBookRegular, "Tre
 
 h2 { font: normal 260%/1.2em fgCompressed, Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; text-transform: uppercase; }
 
-h3 { font-size: 2em; line-height: 1.2em; }
+h3 { font-size: 2em; margin: 1em 0 10px; }
 
 p { margin: 0 3em 1em 0; }
 
@@ -272,7 +272,7 @@ ul.action-links { margin: 20px 0 0; list-style: none; }
 /* "Who's new" block for a list of the newest users */
 /* "Who's online" block for a list of the online users */
 /* ============================================================================= Node Styling ========================================================================== */
-.node { margin-bottom: 40px; }
+.node { margin-bottom: 20px; }
 .node .node-title { margin: 0; }
 
 /* All nodes are given a node-FOO class that describes the type of content that it is. If you create a new content type called "my-custom-type", it will receive a "node-my-custom-type" class. */
@@ -377,3 +377,5 @@ div.messages ul { margin-top: 0; margin-bottom: 0; }
 .node-article .region-two-33-66-first { text-align: right; }
 
 .node-article .region-two-33-66-first > div, .node-article .region-two-33-66-second > div { margin: 0 2em 0 0; }
+
+.field-name-field-job-title { font-family: fgCompressed, Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; text-transform: uppercase; }

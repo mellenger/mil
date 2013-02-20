@@ -92,6 +92,7 @@ h2 {
 
 h3 {
   font-size:2em;
+  margin:1em 0 10px;
 }
 
 
@@ -1990,4 +1991,9 @@ tr.error {
 .node-article .region-two-33-66-first > div,
 .node-article .region-two-33-66-second > div {
   margin: 0 2em 0 0;
+}
+
+.field-name-field-job-title {
+  font-family: $impact;
+  text-transform:uppercase;
 }
