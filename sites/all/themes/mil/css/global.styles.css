@@ -370,7 +370,7 @@ div.messages ul { margin-top: 0; margin-bottom: 0; }
 #styleguide-header { padding: 0 10px; }
 #styleguide-header .item-list { font-family: inherit; margin: 0 20px 20px 0; min-height: 260px; width: auto; }
 
-.pane-news h2 { border-bottom: 1px solid whitesmoke; }
+.pane-news h2.pane-title, .pane-team-members-team h2.pane-title { border-bottom: 1px solid whitesmoke; }
 
 .node-article h3 { margin-left: 33.3333%; }
 

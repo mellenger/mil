@@ -1976,9 +1976,11 @@ tr.error {
   }
 }
 
-.pane-news h2 {
-  border-bottom: 1px solid $ultralight;
-}
+.pane-news, .pane-team-members-team {
+  h2.pane-title {
+    border-bottom: 1px solid $ultralight;
+  }
+} 
 
 .node-article h3 {
   margin-left: 33.3333%;
