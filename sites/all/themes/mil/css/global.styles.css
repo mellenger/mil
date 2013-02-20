@@ -16,7 +16,7 @@ h1#site-name { font: normal normal normal 1em/1.1em fgHeavy, fgBookRegular, "Tre
 
 h2 { font: normal 260%/1.2em fgCompressed, Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; text-transform: uppercase; }
 
-h3 { font-size: 2em; }
+h3 { font-size: 2em; margin: 1em 0 10px; }
 
 p { margin: 0 3em 1em 0; }
 
@@ -370,10 +370,12 @@ div.messages ul { margin-top: 0; margin-bottom: 0; }
 #styleguide-header { padding: 0 10px; }
 #styleguide-header .item-list { font-family: inherit; margin: 0 20px 20px 0; min-height: 260px; width: auto; }
 
-.pane-news h2 { border-bottom: 1px solid whitesmoke; }
+.pane-news h2.pane-title, .pane-team-members-team h2.pane-title { border-bottom: 1px solid whitesmoke; }
 
 .node-article h3 { margin-left: 33.3333%; }
 
 .node-article .region-two-33-66-first { text-align: right; }
 
 .node-article .region-two-33-66-first > div, .node-article .region-two-33-66-second > div { margin: 0 2em 0 0; }
+
+.field-name-field-job-title { font-family: fgCompressed, Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; text-transform: uppercase; }
