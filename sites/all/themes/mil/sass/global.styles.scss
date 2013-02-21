@@ -2037,18 +2037,10 @@ body.front .region-two-66-33-bottom h2.pane-title {
   display:inline-block;
 }
 
-.node-team-member .block-title {
+.node-team-member {
+  .block-title {
   display:inline-block;
-}
-
-
-.bx-wrapper .bx-viewport article {
-/*  -moz-box-shadow: 0 0 5px #ccc;
-  -webkit-box-shadow: 0 0 5px #ccc;
-  box-shadow: 0 0 5px #ccc;
-  border: solid #fff 5px;*/
-  // width:90%;
-  // padding-left:60px;
+  }
   a {
     display:block;
   }

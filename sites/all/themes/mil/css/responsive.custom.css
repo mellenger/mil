@@ -6,6 +6,8 @@
 /* Smartphone sizes and down */
 @media only screen and (max-width: 480px) { /*  Float Region blocks example: In smaller screen sizes we can remove the float and widths so all blocks stack instead of displaying horizonally. The selector used here is an "attribute selector" which will match on any float block class. Use your inspector or Firebug to get the classes from the page output if you need more granular control over block alignment and stacking.  "Float Region blocks" is an extension for floating blocks in regions, see your themes appearance settings, under the Extensions tab. */
   .region[class*="float-blocks"] .block { float: none; width: 100%; }
+  #header { padding-left: 0; }
+  #columns { margin-left: -10px; }
   .node-article .two-33-66 { display: -moz-box; /* Firefox */ display: -webkit-box; /* Safari and Chrome */ display: box; box-orient: vertical; -webkit-box-orient: vertical; -moz-box-orient: vertical; }
   .node-article h3 { margin: 10px; }
   .node-article .region-two-33-66-first { text-align: left; -moz-box-ordinal-group: 3; /* Firefox */ -webkit-box-ordinal-group: 3; /* Safari and Chrome */ box-ordinal-group: 3; }
