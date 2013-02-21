@@ -30,44 +30,6 @@
 ===================================*/
 
 
-
-
-/*  EDITED START  */
-
-.bx-wrapper .bx-viewport {
-/*	-moz-box-shadow: 0 0 5px #ccc;
-	-webkit-box-shadow: 0 0 5px #ccc;
-	box-shadow: 0 0 5px #ccc;
-	border: solid #fff 5px;*/
-	left: -5px;
-	background: #fff;
-}
-
-.bx-wrapper .bx-viewport .at-panel{
-	margin: 0 auto !important;
-	display:block;
-}
-
-#panels-ipe-paneid-5 .view-footer .pane-title{
-	display: none;
-}
-
-#panels-ipe-paneid-5 .view-footer .view-content{
-	text-align: center;
-}
-
-#panels-ipe-paneid-5 .view-footer .view-content > div{
-	display: inline;
-}
-
-h2.pane-title{
-	cursor:pointer;
-}
-
-
-
-/*  EDITED END  */
-
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
 	position: absolute;

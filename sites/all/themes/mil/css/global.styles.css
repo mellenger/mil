@@ -370,12 +370,25 @@ div.messages ul { margin-top: 0; margin-bottom: 0; }
 #styleguide-header { padding: 0 10px; }
 #styleguide-header .item-list { font-family: inherit; margin: 0 20px 20px 0; min-height: 260px; width: auto; }
 
-.pane-news h2.pane-title, .pane-team-members-team h2.pane-title { border-bottom: 1px solid whitesmoke; }
+body.front .region-two-66-33-bottom h2.pane-title { border-bottom: 1px solid whitesmoke; }
 
+/*blog*/
 .node-article h3 { margin-left: 33.3333%; }
 
 .node-article .region-two-33-66-first { text-align: right; }
 
 .node-article .region-two-33-66-first > div, .node-article .region-two-33-66-second > div { margin: 0 2em 0 0; }
 
-.field-name-field-job-title { font-family: fgCompressed, Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; text-transform: uppercase; }
+/*team*/
+.field-name-field-job-title { font-family: fgCompressed, Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; text-transform: uppercase; display: inline-block; }
+
+.node-team-member .block-title { display: inline-block; }
+
+.bx-wrapper .bx-viewport article { /*  -moz-box-shadow: 0 0 5px #ccc; -webkit-box-shadow: 0 0 5px #ccc; box-shadow: 0 0 5px #ccc; border: solid #fff 5px;*/ width: 90%; padding-left: 60px; }
+.bx-wrapper .bx-viewport article a { display: block; }
+
+.bx-wrapper .bx-prev { left: 0px; }
+
+.view-team-members .view-header .view-content { text-align: center; }
+.view-team-members .view-header .view-content > div { display: inline-block; margin: 10px 0 0 10px; }
+.view-team-members .view-header .view-content > div a.active { opacity: 1; }

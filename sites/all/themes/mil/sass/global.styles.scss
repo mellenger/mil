@@ -1976,11 +1976,12 @@ tr.error {
   }
 }
 
-.pane-news, .pane-team-members-team {
-  h2.pane-title {
-    border-bottom: 1px solid $ultralight;
-  }
-} 
+body.front .region-two-66-33-bottom h2.pane-title {
+  border-bottom: 1px solid $ultralight;
+}
+
+
+/*blog*/
 
 .node-article h3 {
   margin-left: 33.3333%;
@@ -1995,7 +1996,47 @@ tr.error {
   margin: 0 2em 0 0;
 }
 
+/*team*/
+
 .field-name-field-job-title {
   font-family: $impact;
   text-transform:uppercase;
+  display:inline-block;
+}
+
+.node-team-member .block-title {
+  display:inline-block;
+}
+
+
+.bx-wrapper .bx-viewport article {
+/*  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  border: solid #fff 5px;*/
+  width:90%;
+  padding-left:60px;
+  a {
+    display:block;
+  }
+}
+
+// .bx-wrapper .bx-viewport .at-panel{
+//   margin: 0 auto !important;
+//   display:block;
+// }
+
+.bx-wrapper .bx-prev {
+  left:0px;
+}
+
+.view-team-members .view-header .view-content{
+  text-align:center;
+  & > div{
+  display: inline-block;
+  margin:10px 0 0 10px;
+    a.active {
+      opacity:1;
+    }
+  }
 }
