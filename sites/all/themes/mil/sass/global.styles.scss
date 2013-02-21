@@ -197,7 +197,7 @@ var {
  */
 #header {
   height: 5em;
-  padding: 1em 0 0 0;
+  padding: 1em 0 0 10px;
 }
 
 
@@ -2014,8 +2014,8 @@ body.front .region-two-66-33-bottom h2.pane-title {
   -webkit-box-shadow: 0 0 5px #ccc;
   box-shadow: 0 0 5px #ccc;
   border: solid #fff 5px;*/
-  width:90%;
-  padding-left:60px;
+  // width:90%;
+  // padding-left:60px;
   a {
     display:block;
   }
@@ -2026,8 +2026,8 @@ body.front .region-two-66-33-bottom h2.pane-title {
 //   display:block;
 // }
 
-.bx-wrapper .bx-prev {
-  left:0px;
+.bx-controls {
+  display:none;
 }
 
 .view-team-members .view-header .view-content{

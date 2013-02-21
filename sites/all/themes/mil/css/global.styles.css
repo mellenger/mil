@@ -25,7 +25,7 @@ pre, code, tt, samp, kbd, var { font-family: Consolas, Monaco, "Courier New", Co
 /* ============================================================================= Wrappers ========================================================================== */
 /* Page wrapper, includes the .container class which sets the overall page or section width Main wrapper in page.tpl.php, the .container class sets the width of the page, do not add width to it! */
 /* Wraps all header elements - branding and .region-header */
-#header { height: 5em; padding: 1em 0 0 0; }
+#header { height: 5em; padding: 1em 0 0 10px; }
 
 /* Wraps the sidebars the content column */
 /* Main content column wrapper */
@@ -384,10 +384,10 @@ body.front .region-two-66-33-bottom h2.pane-title { border-bottom: 1px solid whi
 
 .node-team-member .block-title { display: inline-block; }
 
-.bx-wrapper .bx-viewport article { /*  -moz-box-shadow: 0 0 5px #ccc; -webkit-box-shadow: 0 0 5px #ccc; box-shadow: 0 0 5px #ccc; border: solid #fff 5px;*/ width: 90%; padding-left: 60px; }
+.bx-wrapper .bx-viewport article { /*  -moz-box-shadow: 0 0 5px #ccc; -webkit-box-shadow: 0 0 5px #ccc; box-shadow: 0 0 5px #ccc; border: solid #fff 5px;*/ }
 .bx-wrapper .bx-viewport article a { display: block; }
 
-.bx-wrapper .bx-prev { left: 0px; }
+.bx-controls { display: none; }
 
 .view-team-members .view-header .view-content { text-align: center; }
 .view-team-members .view-header .view-content > div { display: inline-block; margin: 10px 0 0 10px; }
