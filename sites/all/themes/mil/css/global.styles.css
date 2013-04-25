@@ -34,7 +34,7 @@ pre, code, tt, samp, kbd, var { font-family: Consolas, Monaco, "Courier New", Co
 /* ============================================================================= Wrappers ========================================================================== */
 /* Page wrapper, includes the .container class which sets the overall page or section width Main wrapper in page.tpl.php, the .container class sets the width of the page, do not add width to it! */
 /* Wraps all header elements - branding and .region-header */
-#header { height: 5em; padding: 1em 0 0 0; }
+#header { padding: 1em 0 0 0; }
 
 /* Wraps the sidebars the content column */
 /* Main content column wrapper */
