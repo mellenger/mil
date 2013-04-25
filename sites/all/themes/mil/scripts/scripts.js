@@ -38,9 +38,9 @@ Drupal.behaviors.homepageselector = {
 
     var collapsePanels = "body.page-home .region-two-66-33-bottom h2.pane-title";
 
-    $(collapsePanels, context).prepend('<div class="arrow"></div>');
+    $(collapsePanels).prepend('<div class="arrow"></div>');
 
-		$(collapsePanels, context).click(function(){
+		$(collapsePanels).click(function(){
 
       if($(this).hasClass('open')){
         $(this).removeClass('open').parent().find('.block-content').hide(500);
@@ -51,14 +51,16 @@ Drupal.behaviors.homepageselector = {
 			
 		});
 
-		$(collapsePanels, context).last().click();
+		$(collapsePanels).last().click();
 	}
 };
 
 
 Drupal.behaviors.mellemation = {
   attach: function(context){
-    $('#mellemation').css({'background-image': $('#mellemation').attr('data-background-image'), 'background-position': $('#mellemation').attr('data-position') });
+    $('.mellemation').each(function(){
+      $(this).css({'background-image': 'url('+$(this).attr('data-background-image')+')', 'background-position': $(this).attr('data-position') });
+    });
   }
 };
 
