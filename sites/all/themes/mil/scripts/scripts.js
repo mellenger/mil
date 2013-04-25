@@ -55,4 +55,11 @@ Drupal.behaviors.homepageselector = {
 	}
 };
 
+
+Drupal.behaviors.mellemation = {
+  attach: function(context){
+    $('#mellemation').css({'background-image': $('#mellemation').attr('data-background-image'), 'background-position': $('#mellemation').attr('data-position') });
+  }
+};
+
 })(jQuery);
