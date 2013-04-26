@@ -38,7 +38,7 @@ Drupal.behaviors.homepageselector = {
 
     var collapsePanels = "body.page-home .region-two-66-33-bottom h2.pane-title";
 
-    $(collapsePanels, context).prepend('<div class="arrow"></div>');
+    $(collapsePanels, context).prepend('<div class="arrow"></div>').parent().find('.block-content').hide();
 
 		$(collapsePanels, context).click(function(){
 

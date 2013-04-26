@@ -56,6 +56,7 @@ h1#site-name {
   text-indent: -100%;
   overflow: hidden;
   */
+  display:none;
 }
 
 h2 {
@@ -209,7 +210,7 @@ ul.links {
 a {
   text-decoration: none;
   color: #005980;
-  opacity: 0.6;
+  opacity: 0.9;
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
   -ms-transition-property: opacity;
@@ -943,6 +944,7 @@ body.front .region-two-66-33-bottom h2.pane-title {
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 30px; height: 0; overflow: hidden;
+    margin-bottom:1em;
     iframe, object, embed {
         position: absolute;
         top: 0;
