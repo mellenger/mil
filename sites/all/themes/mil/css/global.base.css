@@ -149,8 +149,6 @@ table { border: 1px solid; border-spacing: 0; border-collapse: collapse; font-si
 #main-content, .block-inner, .pane-inner, .menu-wrapper, .branding-elements, .breadcrumb-wrapper, .attribution, .at-panel .rounded-corner, .block-panels-mini > .block-title, div.messages { margin-left: 10px; margin-right: 10px; }
 
 /* Panel pages need negative margin equal to the gutter width applied to #content, this is taken care of in theme settings as per above for normal gutters */
-#content .panel-display, #content .panel-flexible { margin-left: -10px; margin-right: -10px; }
-
 /* ============================================================================= Flexible Media and Cross browser improvements ========================================================================== */
 /* - This can cause issues in table cells where no width is set on the column, only in some versions of webkit and IE 7/8. - declaring the width attribute on image elements and using max-width causes the "dissappering images" bug in IE8. - Mapping services such as Google Maps may break also, see below for fixes. */
 img { height: auto; -ms-interpolation-mode: bicubic; }

@@ -1,3 +1,6 @@
+// _base.scss imports _custom.scss and other partials.
+@import "base";
+
 @font-face {
   font-family: "fgBookRegular";
   src: url('../webfonts/franklingothicfs_book_macroman/FranklinGothic-Book-webfont.eot');
@@ -881,9 +884,45 @@ div.messages {
   }
 }
 
-.pane-news h2 {
-  border-bottom: 1px solid whitesmoke;
+
+body.front .region-two-66-33-bottom h2.pane-title {
+  border-bottom: 1px solid $ultralight;
+  cursor:pointer;
+  opacity:0.6;
+  @include transition-property(opacity);
+  @include transition-duration(.1s);
+  @include transition-timing-function(ease-in);
+  &:hover {
+    opacity:1;
+  }
+
+  .arrow {
+    display:inline-block;
+    border: solid transparent;
+    border-color: rgba(0, 0, 0, 0);
+    border-left-color: #000000;
+    border-width: 10px;
+    height: 0;
+    width: 0;
+    position:relative;
+    top:-2px;
+    @include transition-property(rotation);
+    @include transition-duration(.4s);
+    @include transition-timing-function(ease-in);
+    @include transform-origin(25%, 50%);
+  }
+
+  &.open .arrow {
+    @include rotate(90deg);
+  }
+
 }
+
+
+/*blog*/
+
+
+/* blog */
 
 .node-article {
   h3 {

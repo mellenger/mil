@@ -558,11 +558,11 @@ div.messages {
  * Panel pages need negative margin equal to the gutter width applied to #content,
  * this is taken care of in theme settings as per above for normal gutters
  */
-#content .panel-display,
-#content .panel-flexible {
-  margin-left: -$gutter-width;
-  margin-right: -$gutter-width;
-}
+// #content .panel-display,
+// #content .panel-flexible {
+//   margin-left: -$gutter-width;
+//   margin-right: -$gutter-width;
+// }
 
 
 /* =============================================================================
