@@ -64,4 +64,22 @@ Drupal.behaviors.mellemation = {
   }
 };
 
+$(document).ready(function(){
+  console.log('konami ready');
+    var konami = function(){
+      console.log('konami set');
+      var konamiKeys = new Array();
+      konamiKeys = [38,38,40,40,37,39,37,39,66,65,13]
+      $('body').bind('keydown', function(e){
+        if(konamiKeys[0] == e.keyCode){
+          konamiKeys.shift();
+          if(konamiKeys.length < 1){
+            $('body').prepend('<div class="adwalkon"></div>');
+          }
+        }
+      });
+    }
+    konami();
+});
+
 })(jQuery);
