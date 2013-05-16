@@ -391,4 +391,10 @@ body.front .region-two-66-33-bottom h2.pane-title.open .arrow { -webkit-transfor
 .video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
 /* Mellemation */
+<<<<<<< HEAD
 .mellemation { mask: url(images/mellenger.png) top left/cover; mask-origin: content; mask-repeat: no-repeat; -webkit-mask: url(images/mellenger.png) top left/cover; -webkit-mask-origin: content; -webkit-mask-repeat: no-repeat; background-repeat: no-repeat; background-size: cover; background-color: #f9f9f9; width: 100%; height: 190px; padding-bottom: 35px; }
+=======
+.mellemation { mask: url(images/mellenger.svg) top left/cover; mask-origin: content; mask-repeat: no-repeat; -webkit-mask: url(images/mellenger.svg) top left/cover; -webkit-mask-origin: content; -webkit-mask-repeat: no-repeat; background-repeat: no-repeat; background-size: cover; background-color: #f9f9f9; width: 100%; height: 190px; padding-bottom: 35px; }
+
+.adwalkon { position: absolute; bottom: 0px; right: 0px; background-image: url("images/gif/adwalkon.gif"); background-repeat: no-repeat; width: 1280px; height: 552px; z-index: 5000; }
+>>>>>>> fcfe2ac9472b2764f4b7f4f28687992dd5b312cc

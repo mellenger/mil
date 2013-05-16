@@ -972,3 +972,25 @@ body.front .region-two-66-33-bottom h2.pane-title {
   height: 190px;
   padding-bottom: 35px;
 }
+
+// .preload-adwalkon{
+//   position:absolute;
+//   bottom:-10px;
+//   right:-10px;
+//   background-image:url('images/gif/adwalkon.gif');
+//   background-repeat:no-repeat;
+//   width:1px;
+//   height:1px;
+//   z-index:0;
+// }
+
+.adwalkon{
+  position:absolute;
+  bottom:0px;
+  right:0px;
+  background-image:url('images/gif/adwalkon.gif');
+  background-repeat:no-repeat;
+  width:1280px;
+  height:552px;
+  z-index:5000;
+}
