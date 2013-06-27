@@ -64,10 +64,42 @@ Drupal.behaviors.mellemation = {
   }
 };
 
+Drupal.behaviors.workImgPopup = {
+  attach: function(context){
+    $('.view-work img').click(function(e){
+      e.preventDefault();
+
+      $('body').prepend('<div class="popover"><img src="'+ $(this).attr('src') +'" /></div>');
+      $('.popover').css({
+        'position':'fixed',
+        'top': '0px',
+        'left': '0px',
+        'width': '100%',
+        'height': '100%',
+        'z-index': '50000',
+        'background-color':'rgba(255,255,255,0.8)',
+        'cursor': 'pointer',
+      });
+
+      $('.popover img').css({
+        'position':'absolute',
+        'top': $(window).height()/2 - $('.popover img').height()/2 + 'px',
+        'left': $(window).width()/2 - $('.popover img').width()/2 + 'px',
+        'z-index': '50000',
+      });
+
+      $('.popover').click(function(){
+        $(this).remove();
+      });
+
+    });
+  }
+};
+
+
+
 $(document).ready(function(){
-  console.log('konami ready');
     var konami = function(){
-      console.log('konami set');
       var konamiKeys = new Array();
       konamiKeys = [38,38,40,40,37,39,37,39,66,65,13]
       $('body').bind('keydown', function(e){
