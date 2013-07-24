@@ -55,7 +55,9 @@ pre, code, tt, samp, kbd, var { font-family: Consolas, Monaco, "Courier New", Co
 /* Wraps the main content column */
 /* Wraps the tertiary content/postfix region */
 /* Footer wrapper */
-#footer { border-top: 1px solid whitesmoke; padding-top: 1em; font-size: 11px; }
+#footer { background-color: #333; padding-top: 1em; font-size: 11px; color: #fff; }
+#footer a, #footer a:hover { color: #fff; }
+#footer .block { margin-bottom: 0; }
 
 /* ============================================================================= Branding ========================================================================== */
 /* Wraps all the branding elements, logo, name and slogan */

@@ -109,9 +109,17 @@ pre, code, tt, samp, kbd, var {
 /* Footer wrapper */
 
 #footer {
-  border-top:1px solid $ultralight;
+  background-color:#333;
   padding-top:1em;
   font-size:11px;
+  color:#fff;
+  a,
+  a:hover {
+    color:#fff;
+  }
+  .block {
+    margin-bottom:0;
+  }
 }
 
 /* ============================================================================= Branding ========================================================================== */
