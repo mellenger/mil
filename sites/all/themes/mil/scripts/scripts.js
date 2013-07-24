@@ -64,8 +64,11 @@ Drupal.behaviors.mellemation = {
   }
 };
 
-Drupal.behaviors.workImgPopup = {
+Drupal.behaviors.ourWorkImages = {
   attach: function(context){
+
+    $('.view-work .region-two-66-33-first .region-inner').cycle();
+
     $('.view-work img').click(function(e){
       e.preventDefault();
 

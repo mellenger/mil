@@ -66,6 +66,7 @@
   ; reveal modal javascript
   scripts[] = scripts/jquery.reveal.js
   scripts[] = scripts/jquery.bxslider.min.js
+  scripts[] = scripts/jquery.cycle.all.js
   scripts[] = scripts/scripts.js
 
 
