@@ -23,9 +23,9 @@ text-indent: -100%;
 overflow: hidden;
 */ display: none; }
 
-h2 { font: normal 260%/1.2em fgCompressed, Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; text-transform: uppercase; }
+h2 { font: normal 260%/1em fgCompressed, Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; text-transform: uppercase; }
 
-h3 { font-size: 2em; }
+h3 { font-size: 2em; line-height: 1.1em; }
 
 p { margin: 0 3em 1em 0; }
 
@@ -395,9 +395,8 @@ body.node-type-article .region-two-33-66-second > div { font-size: 133%; }
 .video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
 /* Mellemation */
-.mellemation { background-repeat: no-repeat; background-size: cover; background-color: #f9f9f9; width: 100%; height: 220px; }
-
-.mellenmation:before { content: ' '; z-index: 10; background-image: url(images/mellenger.png); background-size: cover; height: 220px; background-repeat: no-repeat; width: 100%; }
+.mellemation { background-repeat: no-repeat; background-size: cover; background-color: #ccc; width: 100%; }
+.mellemation img { display: block; }
 
 .adwalkon { position: absolute; bottom: 0px; right: 0px; background-image: url("images/gif/adwalkon.gif"); background-repeat: no-repeat; width: 1280px; height: 552px; z-index: 5000; }
 

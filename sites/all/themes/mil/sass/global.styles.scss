@@ -60,12 +60,13 @@ h1#site-name {
 }
 
 h2 {
-  font: normal 260% / 1.2em fgCompressed, Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+  font: normal 260% / 1em fgCompressed, Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
   text-transform: uppercase;
 }
 
 h3 {
   font-size: 2em;
+  line-height:1.1em;
 }
 
 p {
@@ -974,19 +975,11 @@ body.node-type-article .region-two-33-66-second > div {
 .mellemation{
   background-repeat: no-repeat;
   background-size: cover; 
-  background-color: #f9f9f9;
+  background-color: #ccc;
   width: 100%;
-  height: 220px;
-}
-
-.mellenmation:before{
-  content:' ';
-  z-index: 10;
-  background-image: url(images/mellenger.png);
-  background-size: cover;
-  height: 220px;
-  background-repeat: no-repeat;
-  width:100%;
+  img {
+    display:block;
+  }
 }
 
 .adwalkon{
