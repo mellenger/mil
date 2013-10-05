@@ -1,0 +1,308 @@
+$white: #fff;
+$plain-text: #333;
+$bright-blue: rgb(0,158,231);
+$light-blue: rgba(0,158,231,0.7);
+$dark-purple: rgb(73,74,140);
+$light-purple: rgba(73,74,140, 0.7);
+$dark-grey: rgb(61,66,68);
+$light-grey: rgba(61,66,68, 0.7);
+$grey-blue: rgb(188,204,212);
+$light-grey-blue: rgba(188,204,212,0.7);
+
+$font-scale: 100%;
+
+$pullquote: 108px;
+$large-header: 80px;
+$medium-header: 72px;
+$small-header: 36px;
+$large-text: 34px;
+$text: 21px;
+$unordered-list: 24px;
+
+body{
+  font-size:100%;
+  color: $plain-text;
+  padding-top:0px !important;
+}
+
+header, main, nav, footer{
+  position:relative;
+  z-index:2;
+}
+
+header{
+  padding-left: 5%;
+  padding-right:5%;
+  height:70px;
+  background-color: $bright-blue;
+  div{
+    max-width:1028px;
+
+
+    .block-menu{
+      @extend .clearfix;
+      h2{
+        margin-top:0px;
+      }
+      ul.menu{
+        float:right;
+        li{
+          float:left;
+          list-style-type:none;
+          padding-left:0px;
+          a{
+            font-size:17px;
+            color:#fff;
+            padding-left:20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer{
+  height:700px;
+}
+
+section{
+  @extend .clearfix;
+  padding-left: 5%;
+  padding-right:5%;
+	h1{
+    font-size: $large-header;
+    line-height:$large-header;;
+    color: $bright-blue;
+    margin-top:0px;
+    margin-bottom:0px;
+  }
+  h2{
+    font-size: $medium-header;
+    line-height:$large-header;
+    color: $plain-text;
+  }
+  h3{
+    font-size: $small-header;
+    line-height: $small-header;
+    color: $plain-text;
+  }
+  p{
+    font-size: $text;
+    color: $plain-text;
+    font-family: $font-family-serif;
+    a{
+      color: $bright-blue;
+    }
+    &.large{
+      font-size: $large-text;
+      font-family: "FranklinGothicFSBook";
+    }
+    &.client{
+      border-bottom:1px solid $plain-text;
+      padding-bottom:2px;
+      display:inline-block;
+    }
+  }
+  blockquote{
+    font-size: $pullquote;
+    line-height: $pullquote;
+    color: $grey-blue;
+    font-weight:bold;
+    margin: 0 0 0 0;
+    &:before{
+      content:"\201C";
+    }
+    &:after{
+      content:"\201D";
+    }
+  }
+
+  ul{
+    padding-left:80px;
+    li{
+      list-style-type:none;
+      position:relative;
+      font-family: "FranklinGothicFSBook";
+      font-size: $unordered-list;
+      &:before{
+        content:"";
+        display:block;
+        width:9px;
+        height:9px;
+        background-color: $bright-blue;
+        @include border-radius(9px);
+        position:absolute;
+        left:-20px;
+        top:15px;
+      }
+    }
+  }
+
+  > div{
+    max-width:1028px;
+    margin-left:auto !important;
+    margin-right:auto !important;
+
+    &.barbottom{
+      border-bottom:1px solid $dark-grey;
+      padding-bottom:25px;
+      margin-bottom:25px;
+      &.thickbar{
+        border-bottom: 10px solid $dark-grey;
+      }
+    }
+  }
+
+  &.hero > div{
+    height:600px;
+  }
+
+  &.purple, &.grey, &.greyblue, &.blue{
+    h2{
+      margin-top:190px;
+      margin-bottom:190px;
+    }
+  }
+
+  &.purple, &.grey{
+    h1{
+      color: $white;
+    }
+    h2{
+      color: $white;
+    }
+    h3{
+      color: $white;
+    }
+    p{
+      color: $white;
+      &.large{
+        
+      }
+    }
+    blockquote{
+      color: $white;
+    }
+  }
+
+  &.purple{
+      background-color: $dark-purple;
+    &.light{
+      background-color: $light-purple;
+    }
+  }
+
+  &.grey{
+      background-color: $dark-grey;
+    &.light{
+      background-color: $light-grey;
+    }
+  }
+
+  &.greyblue, &.blue{
+    h1{
+      color: $white;
+    }
+    h2{
+      color: $white;
+    }
+    h3{
+      color: $white;
+    }
+    p{
+      color: $white;
+      &.large{
+        
+      }
+    }
+    blockquote{
+      color: $white;
+    }
+  }
+
+  &.greyblue{
+      background-color: $grey-blue;
+    &.light{
+      background-color: $light-grey-blue;
+    }
+  }
+
+  &.blue{
+      background-color: $bright-blue;
+    &.light{
+      background-color: $light-blue;
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#lw3dwrapper{
+  position: fixed;
+  z-index: 1;
+  left:0px;
+  top:0px;
+  width:100%;
+  height:100%;
+  -webkit-perspective: 000px;
+  -webkit-perspective-origin: 50% 100px;
+
+  -moz-perspective: 000px;
+  -moz-perspective-origin: 50% 100px;
+
+  -ms-perspective: 000px;
+  -ms-perspective-origin: 50% 100px;
+
+  perspective: 000px;
+  perspective-origin: 50% 100px;
+}
+
+#livingwire-wrapper{
+  width:344px;
+  height:563px;
+  position:absolute;
+  cursor:pointer;
+
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation: spin 5s infinite linear;
+  
+  -moz-transform-style: preserve-3d;
+  -moz-animation: spin 5s infinite linear;
+
+  -ms-transform-style: preserve-3d;
+  -ms-animation: spin 5s infinite linear;
+
+  transform-style: preserve-3d;
+  animation: spin 5s infinite linear;
+
+}
+
+i{
+  height:4px;
+  width:1px;
+  top:0px;
+  left:0px;
+  background-color:#f2f2f2;
+  position:absolute;
+  display:block;
+  border-radius: 4px;
+}
+
+#interactive{ visibility: hidden !important; width:1px; }
+
