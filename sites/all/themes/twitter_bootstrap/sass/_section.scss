@@ -19,6 +19,7 @@ $large-text: 34px;
 $text: 21px;
 $unordered-list: 24px;
 
+
 body{
   font-size:100%;
   color: $plain-text;
@@ -26,6 +27,7 @@ body{
 }
 
 header, main, nav, footer{
+  @extend .clearfix;
   position:relative;
   z-index:2;
 }
@@ -35,17 +37,18 @@ header{
   padding-right:5%;
   height:70px;
   background-color: $bright-blue;
-  div{
+  > div{
     max-width:1028px;
-
-
+    margin:0 auto;
     .block-menu{
       @extend .clearfix;
+      float:right;
       h2{
-        margin-top:0px;
+        display:none;
       }
       ul.menu{
         float:right;
+        margin-top: 37px;
         li{
           float:left;
           list-style-type:none;
@@ -54,6 +57,8 @@ header{
             font-size:17px;
             color:#fff;
             padding-left:20px;
+            font-family: "FranklinGothicFSMed";
+            font-weight: bold;
           }
         }
       }
@@ -305,4 +310,7 @@ i{
 }
 
 #interactive{ visibility: hidden !important; width:1px; }
+
+
+
 
