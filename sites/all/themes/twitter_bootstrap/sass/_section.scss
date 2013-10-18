@@ -10,7 +10,6 @@ $grey-blue: rgb(188,204,212);
 $light-grey-blue: rgba(188,204,212,0.7);
 
 $font-scale: 100%;
-
 $pullquote: 108px;
 $large-header: 80px;
 $medium-header: 72px;
@@ -18,10 +17,11 @@ $small-header: 36px;
 $large-text: 34px;
 $text: 21px;
 $unordered-list: 24px;
-
+$menu-font: 17px;
 
 body{
-  font-size:100%;
+  font-size:$font-scale;
+  @include respond-to(handhelds){ font-size: ($font-scale/4*3); }
   color: $plain-text;
   padding-top:0px !important;
 }
@@ -37,9 +37,25 @@ header{
   padding-right:5%;
   height:70px;
   background-color: $bright-blue;
+  position:fixed;
+  z-index:500;
+  width:100%;
   > div{
     max-width:1028px;
     margin:0 auto;
+
+    a.logo{
+      margin-top:30px;
+      display:block;
+      width:141px;
+      height:28px;
+      float:left;
+      background-image:url('img/logo.png');
+      @include respond-to(handhelds){ width: (141px/4*3); height:(28px/4*3); margin-top:34px; }
+      background-repeat:no-repeat;
+      background-size: cover;
+    }
+
     .block-menu{
       @extend .clearfix;
       float:right;
@@ -49,12 +65,19 @@ header{
       ul.menu{
         float:right;
         margin-top: 37px;
+        padding-left:0px;
         li{
           float:left;
           list-style-type:none;
           padding-left:0px;
+          &:first-child{
+            a{
+              padding-left:0px;
+            }
+          }
           a{
-            font-size:17px;
+            font-size: $menu-font;
+            @include respond-to(handhelds){ font-size: ($menu-font/4*3); }
             color:#fff;
             padding-left:20px;
             font-family: "FranklinGothicFSMed";
@@ -64,6 +87,10 @@ header{
       }
     }
   }
+}
+
+main{
+  padding-top:70px;
 }
 
 footer{
@@ -76,7 +103,8 @@ section{
   padding-right:5%;
 	h1{
     font-size: $large-header;
-    line-height:$large-header;;
+    line-height:$large-header;
+    @include respond-to(handhelds){ font-size: ($large-header/5*3); line-height: ($large-header/5*3); }
     color: $bright-blue;
     margin-top:0px;
     margin-bottom:0px;
@@ -84,15 +112,26 @@ section{
   h2{
     font-size: $medium-header;
     line-height:$large-header;
+    @include respond-to(handhelds){ font-size: ($medium-header/5*3); line-height: ($large-header/5*3); }
     color: $plain-text;
+
+    position: relative;
+    left: -300%;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
   }
   h3{
     font-size: $small-header;
     line-height: $small-header;
+    @include respond-to(handhelds){ font-size: ($small-header/4*3); line-height: ($small-header/4*3); }
     color: $plain-text;
   }
   p{
     font-size: $text;
+    @include respond-to(handhelds){ font-size: ($text/4*3); }
     color: $plain-text;
     font-family: $font-family-serif;
     a{
@@ -100,6 +139,7 @@ section{
     }
     &.large{
       font-size: $large-text;
+      @include respond-to(handhelds){ font-size: ($large-text/4*3); }
       font-family: "FranklinGothicFSBook";
     }
     &.client{
@@ -111,6 +151,7 @@ section{
   blockquote{
     font-size: $pullquote;
     line-height: $pullquote;
+    @include respond-to(handhelds){ font-size: ($pullquote/2); line-height: ($pullquote/2); }
     color: $grey-blue;
     font-weight:bold;
     margin: 0 0 0 0;
@@ -129,6 +170,7 @@ section{
       position:relative;
       font-family: "FranklinGothicFSBook";
       font-size: $unordered-list;
+      @include respond-to(handhelds){ font-size: ($unordered-list/4*3); }
       &:before{
         content:"";
         display:block;
@@ -154,12 +196,30 @@ section{
       margin-bottom:25px;
       &.thickbar{
         border-bottom: 10px solid $dark-grey;
+        margin-bottom:0px;
       }
     }
   }
 
-  &.hero > div{
-    height:600px;
+  &.hero{
+    position:relative;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-right: 0px;
+    > div{
+      height:600px;
+      div.hero-img{
+        position:absolute;
+        top:0px;
+        left:-5%;
+        right:-5%;
+        bottom:0px;
+        overflow:hidden;
+        z-index:-1;
+        background-size:cover;
+      }
+    }
   }
 
   &.purple, &.grey, &.greyblue, &.blue{

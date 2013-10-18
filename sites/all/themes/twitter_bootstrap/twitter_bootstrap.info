@@ -10,6 +10,7 @@ regions[footer]         = Footer
 
 stylesheets[all][] = css/sass-bootstrap.css
 
+scripts[] = js/ballerScroll.js
 scripts[] = js/script.js
 
 settings[toggle_name] = 0

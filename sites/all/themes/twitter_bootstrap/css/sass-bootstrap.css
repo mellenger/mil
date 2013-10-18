@@ -668,115 +668,146 @@ table td[class*="col-"], table th[class*="col-"] { float: none; display: table-c
   .table-responsive > .table-bordered > thead > tr > th:last-child, .table-responsive > .table-bordered > thead > tr > td:last-child, .table-responsive > .table-bordered > tbody > tr > th:last-child, .table-responsive > .table-bordered > tbody > tr > td:last-child, .table-responsive > .table-bordered > tfoot > tr > th:last-child, .table-responsive > .table-bordered > tfoot > tr > td:last-child { border-right: 0; }
   /* line 231, ../sass/_tables.scss */
   .table-responsive > .table-bordered > thead > tr:last-child > th, .table-responsive > .table-bordered > thead > tr:last-child > td, .table-responsive > .table-bordered > tbody > tr:last-child > th, .table-responsive > .table-bordered > tbody > tr:last-child > td, .table-responsive > .table-bordered > tfoot > tr:last-child > th, .table-responsive > .table-bordered > tfoot > tr:last-child > td { border-bottom: 0; } }
-/* line 23, ../sass/_section.scss */
+/* line 22, ../sass/_section.scss */
 body { font-size: 100%; color: #333333; padding-top: 0px !important; }
+@media only screen and (max-width: 700px) { /* line 22, ../sass/_section.scss */
+  body { font-size: 75%; } }
 
 /* line 29, ../sass/_section.scss */
 header, main, nav, footer { position: relative; z-index: 2; }
 
 /* line 35, ../sass/_section.scss */
-header { padding-left: 5%; padding-right: 5%; height: 70px; background-color: #009ee7; }
-/* line 40, ../sass/_section.scss */
-header > div { max-width: 1028px; margin: 0 auto; }
+header { padding-left: 5%; padding-right: 5%; height: 70px; background-color: #009ee7; position: fixed; z-index: 500; width: 100%; }
 /* line 43, ../sass/_section.scss */
+header > div { max-width: 1028px; margin: 0 auto; }
+/* line 47, ../sass/_section.scss */
+header > div a.logo { margin-top: 30px; display: block; width: 141px; height: 28px; float: left; background-image: url("img/logo.png"); background-repeat: no-repeat; background-size: cover; }
+@media only screen and (max-width: 700px) { /* line 47, ../sass/_section.scss */
+  header > div a.logo { width: 105.75px; height: 21px; margin-top: 34px; } }
+/* line 59, ../sass/_section.scss */
 header > div .block-menu { float: right; }
-/* line 46, ../sass/_section.scss */
+/* line 62, ../sass/_section.scss */
 header > div .block-menu h2 { display: none; }
-/* line 49, ../sass/_section.scss */
-header > div .block-menu ul.menu { float: right; margin-top: 37px; }
-/* line 52, ../sass/_section.scss */
-header > div .block-menu ul.menu li { float: left; list-style-type: none; padding-left: 0px; }
-/* line 56, ../sass/_section.scss */
-header > div .block-menu ul.menu li a { font-size: 17px; color: #fff; padding-left: 20px; font-family: "FranklinGothicFSMed"; font-weight: bold; }
-
+/* line 65, ../sass/_section.scss */
+header > div .block-menu ul.menu { float: right; margin-top: 37px; padding-left: 0px; }
 /* line 69, ../sass/_section.scss */
+header > div .block-menu ul.menu li { float: left; list-style-type: none; padding-left: 0px; }
+/* line 74, ../sass/_section.scss */
+header > div .block-menu ul.menu li:first-child a { padding-left: 0px; }
+/* line 78, ../sass/_section.scss */
+header > div .block-menu ul.menu li a { font-size: 17px; color: #fff; padding-left: 20px; font-family: "FranklinGothicFSMed"; font-weight: bold; }
+@media only screen and (max-width: 700px) { /* line 78, ../sass/_section.scss */
+  header > div .block-menu ul.menu li a { font-size: 12.75px; } }
+
+/* line 92, ../sass/_section.scss */
+main { padding-top: 70px; }
+
+/* line 96, ../sass/_section.scss */
 footer { height: 700px; }
 
-/* line 73, ../sass/_section.scss */
+/* line 100, ../sass/_section.scss */
 section { padding-left: 5%; padding-right: 5%; }
-/* line 77, ../sass/_section.scss */
+/* line 104, ../sass/_section.scss */
 section h1 { font-size: 80px; line-height: 80px; color: #009ee7; margin-top: 0px; margin-bottom: 0px; }
-/* line 84, ../sass/_section.scss */
-section h2 { font-size: 72px; line-height: 80px; color: #333333; }
-/* line 89, ../sass/_section.scss */
+@media only screen and (max-width: 700px) { /* line 104, ../sass/_section.scss */
+  section h1 { font-size: 48px; line-height: 48px; } }
+/* line 112, ../sass/_section.scss */
+section h2 { font-size: 72px; line-height: 80px; color: #333333; position: relative; left: -300%; -webkit-transition: all 1s ease-in-out; -moz-transition: all 1s ease-in-out; -o-transition: all 1s ease-in-out; transition: all 1s ease-in-out; }
+@media only screen and (max-width: 700px) { /* line 112, ../sass/_section.scss */
+  section h2 { font-size: 43.2px; line-height: 48px; } }
+/* line 126, ../sass/_section.scss */
 section h3 { font-size: 36px; line-height: 36px; color: #333333; }
-/* line 94, ../sass/_section.scss */
-section p { font-size: 21px; color: #333333; font-family: Georgia, "Times New Roman-", Times, serif; }
-/* line 98, ../sass/_section.scss */
-section p a { color: #009ee7; }
-/* line 101, ../sass/_section.scss */
-section p.large { font-size: 34px; font-family: "FranklinGothicFSBook"; }
-/* line 105, ../sass/_section.scss */
-section p.client { border-bottom: 1px solid #333333; padding-bottom: 2px; display: inline-block; }
-/* line 111, ../sass/_section.scss */
-section blockquote { font-size: 108px; line-height: 108px; color: #bcccd4; font-weight: bold; margin: 0 0 0 0; }
-/* line 117, ../sass/_section.scss */
-section blockquote:before { content: "\201C"; }
-/* line 120, ../sass/_section.scss */
-section blockquote:after { content: "\201D"; }
-/* line 125, ../sass/_section.scss */
-section ul { padding-left: 80px; }
-/* line 127, ../sass/_section.scss */
-section ul li { list-style-type: none; position: relative; font-family: "FranklinGothicFSBook"; font-size: 24px; }
+@media only screen and (max-width: 700px) { /* line 126, ../sass/_section.scss */
+  section h3 { font-size: 27px; line-height: 27px; } }
 /* line 132, ../sass/_section.scss */
-section ul li:before { content: ""; display: block; width: 9px; height: 9px; background-color: #009ee7; -webkit-border-radius: 9px; -moz-border-radius: 9px; -ms-border-radius: 9px; -o-border-radius: 9px; border-radius: 9px; position: absolute; left: -20px; top: 15px; }
-/* line 146, ../sass/_section.scss */
-section > div { max-width: 1028px; margin-left: auto !important; margin-right: auto !important; }
+section p { font-size: 21px; color: #333333; font-family: Georgia, "Times New Roman-", Times, serif; }
+@media only screen and (max-width: 700px) { /* line 132, ../sass/_section.scss */
+  section p { font-size: 15.75px; } }
+/* line 137, ../sass/_section.scss */
+section p a { color: #009ee7; }
+/* line 140, ../sass/_section.scss */
+section p.large { font-size: 34px; font-family: "FranklinGothicFSBook"; }
+@media only screen and (max-width: 700px) { /* line 140, ../sass/_section.scss */
+  section p.large { font-size: 25.5px; } }
+/* line 145, ../sass/_section.scss */
+section p.client { border-bottom: 1px solid #333333; padding-bottom: 2px; display: inline-block; }
 /* line 151, ../sass/_section.scss */
-section > div.barbottom { border-bottom: 1px solid #3d4244; padding-bottom: 25px; margin-bottom: 25px; }
-/* line 155, ../sass/_section.scss */
-section > div.barbottom.thickbar { border-bottom: 10px solid #3d4244; }
+section blockquote { font-size: 108px; line-height: 108px; color: #bcccd4; font-weight: bold; margin: 0 0 0 0; }
+@media only screen and (max-width: 700px) { /* line 151, ../sass/_section.scss */
+  section blockquote { font-size: 54px; line-height: 54px; } }
+/* line 158, ../sass/_section.scss */
+section blockquote:before { content: "\201C"; }
 /* line 161, ../sass/_section.scss */
-section.hero > div { height: 600px; }
+section blockquote:after { content: "\201D"; }
 /* line 166, ../sass/_section.scss */
-section.purple h2, section.grey h2, section.greyblue h2, section.blue h2 { margin-top: 190px; margin-bottom: 190px; }
-/* line 173, ../sass/_section.scss */
-section.purple h1, section.grey h1 { color: white; }
-/* line 176, ../sass/_section.scss */
-section.purple h2, section.grey h2 { color: white; }
-/* line 179, ../sass/_section.scss */
-section.purple h3, section.grey h3 { color: white; }
-/* line 182, ../sass/_section.scss */
-section.purple p, section.grey p { color: white; }
+section ul { padding-left: 80px; }
+/* line 168, ../sass/_section.scss */
+section ul li { list-style-type: none; position: relative; font-family: "FranklinGothicFSBook"; font-size: 24px; }
+@media only screen and (max-width: 700px) { /* line 168, ../sass/_section.scss */
+  section ul li { font-size: 18px; } }
+/* line 174, ../sass/_section.scss */
+section ul li:before { content: ""; display: block; width: 9px; height: 9px; background-color: #009ee7; -webkit-border-radius: 9px; -moz-border-radius: 9px; -ms-border-radius: 9px; -o-border-radius: 9px; border-radius: 9px; position: absolute; left: -20px; top: 15px; }
 /* line 188, ../sass/_section.scss */
-section.purple blockquote, section.grey blockquote { color: white; }
+section > div { max-width: 1028px; margin-left: auto !important; margin-right: auto !important; }
 /* line 193, ../sass/_section.scss */
+section > div.barbottom { border-bottom: 1px solid #3d4244; padding-bottom: 25px; margin-bottom: 25px; }
+/* line 197, ../sass/_section.scss */
+section > div.barbottom.thickbar { border-bottom: 10px solid #3d4244; margin-bottom: 0px; }
+/* line 204, ../sass/_section.scss */
+section.hero { position: relative; position: relative; overflow: hidden; width: 100%; margin-right: 0px; }
+/* line 210, ../sass/_section.scss */
+section.hero > div { height: 600px; }
+/* line 212, ../sass/_section.scss */
+section.hero > div div.hero-img { position: absolute; top: 0px; left: -5%; right: -5%; bottom: 0px; overflow: hidden; z-index: -1; background-size: cover; }
+/* line 226, ../sass/_section.scss */
+section.purple h2, section.grey h2, section.greyblue h2, section.blue h2 { margin-top: 190px; margin-bottom: 190px; }
+/* line 233, ../sass/_section.scss */
+section.purple h1, section.grey h1 { color: white; }
+/* line 236, ../sass/_section.scss */
+section.purple h2, section.grey h2 { color: white; }
+/* line 239, ../sass/_section.scss */
+section.purple h3, section.grey h3 { color: white; }
+/* line 242, ../sass/_section.scss */
+section.purple p, section.grey p { color: white; }
+/* line 248, ../sass/_section.scss */
+section.purple blockquote, section.grey blockquote { color: white; }
+/* line 253, ../sass/_section.scss */
 section.purple { background-color: #494a8c; }
-/* line 195, ../sass/_section.scss */
+/* line 255, ../sass/_section.scss */
 section.purple.light { background-color: rgba(73, 74, 140, 0.7); }
-/* line 200, ../sass/_section.scss */
+/* line 260, ../sass/_section.scss */
 section.grey { background-color: #3d4244; }
-/* line 202, ../sass/_section.scss */
+/* line 262, ../sass/_section.scss */
 section.grey.light { background-color: rgba(61, 66, 68, 0.7); }
-/* line 208, ../sass/_section.scss */
+/* line 268, ../sass/_section.scss */
 section.greyblue h1, section.blue h1 { color: white; }
-/* line 211, ../sass/_section.scss */
+/* line 271, ../sass/_section.scss */
 section.greyblue h2, section.blue h2 { color: white; }
-/* line 214, ../sass/_section.scss */
+/* line 274, ../sass/_section.scss */
 section.greyblue h3, section.blue h3 { color: white; }
-/* line 217, ../sass/_section.scss */
+/* line 277, ../sass/_section.scss */
 section.greyblue p, section.blue p { color: white; }
-/* line 223, ../sass/_section.scss */
+/* line 283, ../sass/_section.scss */
 section.greyblue blockquote, section.blue blockquote { color: white; }
-/* line 228, ../sass/_section.scss */
+/* line 288, ../sass/_section.scss */
 section.greyblue { background-color: #bcccd4; }
-/* line 230, ../sass/_section.scss */
+/* line 290, ../sass/_section.scss */
 section.greyblue.light { background-color: rgba(188, 204, 212, 0.7); }
-/* line 235, ../sass/_section.scss */
+/* line 295, ../sass/_section.scss */
 section.blue { background-color: #009ee7; }
-/* line 237, ../sass/_section.scss */
+/* line 297, ../sass/_section.scss */
 section.blue.light { background-color: rgba(0, 158, 231, 0.7); }
 
-/* line 261, ../sass/_section.scss */
+/* line 321, ../sass/_section.scss */
 #lw3dwrapper { position: fixed; z-index: 1; left: 0px; top: 0px; width: 100%; height: 100%; -webkit-perspective: 000px; -webkit-perspective-origin: 50% 100px; -moz-perspective: 000px; -moz-perspective-origin: 50% 100px; -ms-perspective: 000px; -ms-perspective-origin: 50% 100px; perspective: 000px; perspective-origin: 50% 100px; }
 
-/* line 281, ../sass/_section.scss */
+/* line 341, ../sass/_section.scss */
 #livingwire-wrapper { width: 344px; height: 563px; position: absolute; cursor: pointer; -webkit-transform-style: preserve-3d; -webkit-animation: spin 5s infinite linear; -moz-transform-style: preserve-3d; -moz-animation: spin 5s infinite linear; -ms-transform-style: preserve-3d; -ms-animation: spin 5s infinite linear; transform-style: preserve-3d; animation: spin 5s infinite linear; }
 
-/* line 301, ../sass/_section.scss */
+/* line 361, ../sass/_section.scss */
 i { height: 4px; width: 1px; top: 0px; left: 0px; background-color: #f2f2f2; position: absolute; display: block; border-radius: 4px; }
 
-/* line 312, ../sass/_section.scss */
+/* line 372, ../sass/_section.scss */
 #interactive { visibility: hidden !important; width: 1px; }
 
 /* line 21, ../sass/_mixins.scss */

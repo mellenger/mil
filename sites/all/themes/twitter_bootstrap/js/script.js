@@ -1,5 +1,19 @@
 (function ($) {
   $( document ).ready(function() {
+
+    $(window).ballerScroll(function(scroll){
+
+      $('h2').baller({
+        'topArg': function(elm){ return $(elm).offset().top - $(window).height() + ($(elm).height()/2) ;},
+        'startCallback': function(elm){ $(elm).animate({'left':'0px'}, {'queue': false, 'duration': 350}); },
+      });
+
+    });
+
+
+    $('.hero-img img').attr('src', 'http://placekitten.com/g/'+$(document).width()+'/600');
+
+
     window.lwSpeed = 500;
     window.lwMargin = 15;
 
@@ -25,7 +39,7 @@
         var fromTop = $(document).height() - ( $(window).scrollTop()+$('#lw3dwrapper').height() );
 
         if(fromTop > 0){
-          console.log( 'x1: '+x1 + '    //    w/2: ' + $('#livingwire-wrapper').width()/2 );
+          //console.log( 'x1: '+x1 + '    //    w/2: ' + $('#livingwire-wrapper').width()/2 );
           if( x1 > ($('#livingwire-wrapper').width()/2) ){
             x1 = x1 + Math.floor( (Math.random()* 1)+1) + ((fromTop/2)*-1 );
             y1 = y1 + Math.floor( (Math.random()* 1)+1) + ((fromTop/4)*1 );
@@ -68,7 +82,7 @@
     }
 
     window.timeout=true;
-    $(window).scroll(function(){
+    $(window).ballerScroll(function(){
       if(window.timeout){
         window.timeout=false;
         setTimeout(function(){
