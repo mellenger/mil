@@ -40,6 +40,7 @@ header{
   position:fixed;
   z-index:500;
   width:100%;
+  @include box-shadow(rgba(#000, 0.25) 0 0.5px 25px -2px);
   > div{
     max-width:1028px;
     margin:0 auto;
@@ -107,7 +108,7 @@ section{
     @include respond-to(handhelds){ font-size: ($large-header/5*3); line-height: ($large-header/5*3); }
     color: $bright-blue;
     margin-top:0px;
-    margin-bottom:0px;
+    margin-bottom:1em;
   }
   h2{
     font-size: $medium-header;
@@ -208,7 +209,7 @@ section{
     width: 100%;
     margin-right: 0px;
     > div{
-      height:600px;
+      padding-bottom: 15em;
       div.hero-img{
         position:absolute;
         top:0px;
@@ -217,7 +218,9 @@ section{
         bottom:0px;
         overflow:hidden;
         z-index:-1;
-        background-size:cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
       }
     }
   }
