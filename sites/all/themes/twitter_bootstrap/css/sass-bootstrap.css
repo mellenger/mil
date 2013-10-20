@@ -408,7 +408,7 @@ header > div a.logo { margin-top: 30px; display: block; width: 141px; height: 28
 @media only screen and (max-width: 700px) { header > div a.logo { width: 105.75px; height: 21px; margin-top: 34px; } }
 header > div .block-menu { float: right; }
 header > div .block-menu h2 { display: none; }
-header > div .block-menu ul.menu { float: right; margin-top: 37px; padding-left: 0px; }
+header > div .block-menu ul.menu { float: right; margin-top: 24px; padding-left: 0px; }
 header > div .block-menu ul.menu li { float: left; list-style-type: none; padding-left: 0px; }
 header > div .block-menu ul.menu li:first-child a { padding-left: 0px; }
 header > div .block-menu ul.menu li a { font-size: 17px; color: #fff; padding-left: 20px; font-family: "FranklinGothicFSMed"; font-weight: bold; }
