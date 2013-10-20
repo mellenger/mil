@@ -23,7 +23,6 @@ body{
   font-size:$font-scale;
   @include respond-to(handhelds){ font-size: ($font-scale/4*3); }
   color: $plain-text;
-  padding-top:0px !important;
 }
 
 header, main, nav, footer{
