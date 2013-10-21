@@ -31,7 +31,7 @@
 
 
 
-  <div id="interactive">
+<!--   <div id="interactive">
 
   <span style="fill:none;stroke:#000000;stroke-miterlimit:10;" x1="240.788" y1="53.02" x2="291.256" y2="105.526"/></span>
   <span style="fill:none;stroke:#000000;stroke-miterlimit:10;" x1="159.01" y1="436.263" x2="47.952" y2="139.128"/></span>
@@ -56,7 +56,7 @@
   <div id="lw3dwrapper">
     <div id="livingwire-wrapper">
     </div>
-  </div>
+  </div> -->
 
 
 
