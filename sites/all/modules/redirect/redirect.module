@@ -879,8 +879,7 @@ function redirect_delete_by_path($path) {
  * @ingroup redirect_api
  */
 function redirect_delete_by_entity_path($entity_type, $entity) {
-  $uri = entity_uri($entity_type, $entity);
-  if (!empty($uri['path'])) {
+  if ($uri = entity_uri($entity_type, $entity)) {
     redirect_delete_by_path($uri['path']);
   }
 
@@ -986,7 +985,8 @@ function redirect_redirect($redirect = NULL) {
     flood_register_event('redirection', 60, $session_id ? $session_id : NULL);
   }
   else {
-    trigger_error(t('Infinite redirect loop prevented.'), E_USER_WARNING);
+    watchdog('redirect', 'Infinite loop stopped.');
+    drupal_set_message('Oops, looks like this request tried to create an infinite loop. We do not allow such things here. We are a professional website!');
     return FALSE;
   }
 
@@ -1457,7 +1457,7 @@ function redirect_field_attach_form($entity_type, $entity, &$form, &$form_state,
   }
 
   $uri = entity_uri($entity_type, $entity);
-  if (empty($uri['path'])) {
+  if (empty($uri)) {
     // If the entity has no source path, then we cannot lookup the existing
     // redirects.
     return;
@@ -1467,6 +1467,7 @@ function redirect_field_attach_form($entity_type, $entity, &$form, &$form_state,
   $form['redirect'] = array(
     '#type' => 'fieldset',
     '#title' => t('URL redirects'),
+    '#description' => t('The following are a list of URL redirects that point to this @entitytype.', array('@entitytype' => drupal_strtolower($info['label']))),
     '#collapsible' => TRUE,
     '#collapsed' => TRUE,
     '#access' => user_access('administer redirects'),
@@ -1481,6 +1482,13 @@ function redirect_field_attach_form($entity_type, $entity, &$form, &$form_state,
       $form['redirect']['#attached']['js']['vertical-tabs'] = drupal_get_path('module', 'redirect') . '/redirect.js';
     }
   }
+
+  // We don't have to put our include in $form_state['build_info']['files']
+  // since the build array will already be cached.
+  module_load_include('inc', 'redirect', 'redirect.admin');
+  $redirects = redirect_load_multiple(FALSE, array('redirect' => $uri['path']));
+  $header = array('source', 'status_code', 'language', 'count', 'access', 'operations');
+  $form['redirect'] += redirect_list_table($redirects, $header);
 
   $redirect = array(
     'redirect' => $uri['path'],
@@ -1500,13 +1508,6 @@ function redirect_field_attach_form($entity_type, $entity, &$form, &$form_state,
       'query' => array_filter($redirect) + drupal_get_destination(),
     );
   }
-
-  // We don't have to put our include in $form_state['build_info']['files']
-  // since the build array will already be cached.
-  module_load_include('inc', 'redirect', 'redirect.admin');
-  $redirects = redirect_load_multiple(FALSE, array('redirect' => $uri['path']));
-  $header = array('source', 'status_code', 'language', 'count', 'access', 'operations');
-  $form['redirect'] += redirect_list_table($redirects, $header);
 }
 
 /**

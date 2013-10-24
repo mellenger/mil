@@ -36,7 +36,6 @@
  * Our module sets up a formatter in social_profile_field_field_formatter_info() and
  * social_profile_field_field_formatter_view(). These are the API hooks that present
  * formatted and themed output to the user.
-
  * And finally, our module defines the widet in
  * social_profile_field_field_widget_info() and social_profile_field_field_widget_form().
  * The widget is the form element used to receive input from the user
@@ -175,7 +174,7 @@ function social_profile_field_field_formatter_view($entity_type, $entity, $field
     // This formatter simply outputs the field as text and with a color.
     case 'social_profile_field_icons':
       foreach ($items as $delta => $item) {
-        $class =  array('social-link');
+        $class = array('social-link');
         $domain = _social_profile_field_get_domain($item['url']);
         if ($domain == 'www.youtube.com' || $domain == 'youtube.com') {
           $class[] = 'fancybox-video';
@@ -188,7 +187,7 @@ function social_profile_field_field_formatter_view($entity_type, $entity, $field
           ),
           '#attached' => array(
             'css' => array(
-             drupal_get_path('module', 'social_profile_field') . '/social_profile_field.css',
+              drupal_get_path('module', 'social_profile_field') . '/social_profile_field.css',
             )
           ),
         );
@@ -223,8 +222,8 @@ function social_profile_field_field_formatter_view($entity_type, $entity, $field
 function social_profile_field_field_widget_info() {
   return array(
     'social_profile_field_default' => array(
-       'label' => t('Default'),
-       'field types' => array('social_profile_field_url'),
+      'label' => t('Default'),
+      'field types' => array('social_profile_field_url'),
     ),
   );
 }
