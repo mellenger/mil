@@ -32,7 +32,7 @@ header{
       height:28px;
       float:left;
       background-image:url('img/logo.png');
-      @include respond-to(handhelds){ width: (141px/4*3); height:(28px/4*3); margin-top:34px; }
+      @include respond-to(handhelds){ width: (141px/4*3); height:(28px/4*3); margin-top:10px; }
       background-repeat:no-repeat;
       background-size: cover;
     }
@@ -46,6 +46,7 @@ header{
       ul.menu{
         float:right;
         margin-top: 24px;
+        @include respond-to(handhelds){ margin-top:0; }
         padding-left:0px;
         li{
           float:left;
@@ -58,9 +59,13 @@ header{
           }
           a{
             font-size: $menu-font;
-            @include respond-to(handhelds){ font-size: ($menu-font/4*3); }
-            color:#fff;
             padding-left:20px;
+            @include respond-to(handhelds){ 
+              font-size: ($menu-font/4*3);
+              padding-left: 2em; 
+            }
+            color:#fff;
+            
             font-family: "FranklinGothicFSMed";
             font-weight: 500;
           }
@@ -74,10 +79,12 @@ main{
   padding-top:70px;
   margin-bottom:215px;
   background-color:#fff;
+  @include respond-to(handhelds){ margin-bottom:92px; }
 }
 
 footer{
   height:215px;
+  @include respond-to(handhelds){ height:92px; }
   width:100%;
   left:0px;
   bottom:0px;
@@ -86,7 +93,11 @@ footer{
   background-color: $bright-blue;
   > div{
     max-width:1028px;
-    margin: $grid-gutter-width auto !important;
+    margin: 20px auto 40px !important;
+    background: url(img/footer_bg.png) no-repeat;
+    background-size: 100% auto;
+    height: 255px;
+    @include respond-to(handhelds){ height:92px; }
     #block-block-1, #block-block-2{
       margin-top: 165px;
     }
@@ -185,8 +196,10 @@ section{
 
   ul{
     padding-left:80px;
+    @include respond-to(handhelds){ padding-left:1em; }
     &.menulike{
       padding-left:0px;
+      margin-bottom: 3em;
       li{
         font-family: $font-family-serif;
         font-size: $large-regular;
@@ -212,6 +225,9 @@ section{
           top: 11px;
         }
       }
+    }
+    ul {
+      padding-left: 1em;
     }
     li{
       list-style-type:none;

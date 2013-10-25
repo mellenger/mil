@@ -143,7 +143,7 @@
   .col-sm-9  { width: percentage((9 / $grid-columns)); }
   .col-sm-10 { width: percentage((10/ $grid-columns)); }
   .col-sm-11 { width: percentage((11/ $grid-columns)); }
-  .col-sm-12 { width: 100%; }
+  .col-sm-12 { width: 100%; padding-top: 2em; }
 
   // Push and pull columns for source order changes
   .col-sm-push-1  { left: percentage((1 / $grid-columns)); }

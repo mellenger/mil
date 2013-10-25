@@ -91,6 +91,9 @@ h6, .h6 { font-size: $font-size-h6; }
 
 .hero h1 {
   font-size: $font-size-h2;
+  @include respond-to(handhelds){ 
+    font-size: ($font-size-h2/2);
+  }
   color: $bright-blue;
   margin-top:2em;
   margin-right: 0;
