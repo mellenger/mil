@@ -83,7 +83,7 @@ main{
 }
 
 footer{
-  height:215px;
+  height:220px;
   @include respond-to(handhelds){ height:92px; }
   width:100%;
   left:0px;
@@ -96,15 +96,33 @@ footer{
     margin: 20px auto 40px !important;
     background: url(img/footer_bg.png) no-repeat;
     background-size: 100% auto;
-    height: 255px;
-    @include respond-to(handhelds){ height:92px; }
-    #block-block-1, #block-block-2{
-      margin-top: 165px;
+    padding: 7% 0 12%;
+    @include respond-to(handhelds){ padding: 2% 0 10%; }
+    #block-block-2{
+      margin:0 auto;
+      width: 420px;
+      @include respond-to(handhelds){ padding:0 5%; }
+      &:before {
+        content: "Mellenger Interactive Ltd";
+        font-size:$footer-normal;
+        line-height: $footer-normal;
+        color:#fff;
+        padding:0px !important;
+        font-weight:300;
+        float: left;
+        @include respond-to(handhelds){ clear:both; float:none; }
+      }
     }
     li{
+      padding-left: 0;
+      float: left;
       &:first-child{
         a{
-          border-left:none !important;
+          @include respond-to(handhelds){ 
+            border-left:none !important;
+            padding-left:0px !important;
+            margin-left:0px !important;
+          }
         }
       }
       a{
@@ -118,7 +136,6 @@ footer{
       font-size:$footer-normal;
       line-height: $footer-normal;
       color:#fff;
-      float:left;
       padding:0px !important;
       margin-right:20px;
       font-weight:300;
