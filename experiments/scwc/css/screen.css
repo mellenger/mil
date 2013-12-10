@@ -1,0 +1,81 @@
+/* line 18, ../sass/screen.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+/* line 25, ../sass/screen.scss */
+body > [data-link] {
+  position: fixed;
+}
+/* line 28, ../sass/screen.scss */
+body > [data-collect] {
+  position: absolute;
+}
+/* line 31, ../sass/screen.scss */
+body [data-collect] {
+  color: red;
+  cursor: pointer;
+}
+/* line 36, ../sass/screen.scss */
+body [data-collector] [data-colid] {
+  visibility: hidden;
+}
+
+/* line 42, ../sass/screen.scss */
+.blue {
+  background-color: rgba(0, 0, 255, 0.3);
+}
+
+/* line 46, ../sass/screen.scss */
+.green {
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
+/* line 50, ../sass/screen.scss */
+.red {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+/* line 54, ../sass/screen.scss */
+.yellow {
+  background-color: rgba(255, 255, 0, 0.3);
+}
+
+/* line 58, ../sass/screen.scss */
+h3 {
+  margin-bottom: 250px;
+}
+
+/* line 62, ../sass/screen.scss */
+h4 {
+  margin-bottom: 75px;
+}
+
+/* line 66, ../sass/screen.scss */
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 69, ../sass/screen.scss */
+.wrapper .wrapper-content {
+  position: relative;
+}
+/* line 4, ../sass/screen.scss */
+.wrapper .wrapper-content:before, .wrapper .wrapper-content:after {
+  content: " ";
+  display: table;
+}
+/* line 8, ../sass/screen.scss */
+.wrapper .wrapper-content:after {
+  clear: both;
+}
+/* line 12, ../sass/screen.scss */
+.wrapper .wrapper-content {
+  *zoom: 1;
+}
+/* line 72, ../sass/screen.scss */
+.wrapper .wrapper-content .content-pane {
+  float: left;
+}
