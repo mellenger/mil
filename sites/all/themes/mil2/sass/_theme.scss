@@ -1,0 +1,26 @@
+body{
+  @extend .background-pattern;
+}
+
+header{
+  height:68px;
+  width:100%;
+  position:fixed;
+  background-color:#009ee7;
+  z-index:100000;
+  .header-region{
+    width:1005px;
+    margin:0 auto;
+  }
+}
+
+.pane-content-wrapper{
+	width:886px;
+	margin-left: auto;
+	margin-right: auto;
+  margin-top:115px;
+	background-color:#ffffff;
+  > .panel-pane{
+    padding:30px;
+  }
+}

@@ -1,0 +1,14 @@
+.page{
+  width:100%;
+  overflow: hidden;
+	.panel-display{
+    @include clearfix;
+    position: relative;
+    .panel-separator{
+      display:none;
+    }
+  	> .panel-pane{
+      float:left;
+  	}
+  }
+}
