@@ -32,5 +32,6 @@
 		<?php print $page_top;?>
 		<?php print $page; ?>
 		<?php print $page_bottom;?>
+		<script src="https://raw.github.com/Team-Sass/Singularity/1.x.x/templates/project/grid.js"></script>
 	</body>
 </html>
