@@ -17,7 +17,7 @@
  *   data including the contexts and all of the other panes being displayed.
  */
 ?>
-<div class="panel-pane">
+
   <div class="pane-content-wrapper">
     <?php if ($pane_prefix): ?>
       <?php print $pane_prefix; ?>
@@ -59,4 +59,3 @@
       <?php print $pane_suffix; ?>
     <?php endif; ?>
   </div>
-</div>
